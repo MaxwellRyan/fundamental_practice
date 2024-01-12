@@ -68,13 +68,15 @@ def postorder_traversal(node):
 
 def main():
     root = Node(50)
-
+    
+    # insert some nodes
     insert(root, 100)
     insert(root, 10)
     insert(root, 15)
     insert(root, 60)
     insert(root, 55)
     
+    # show various traversal orders
     inorder_traversal(root)
     print('\n')
     preorder_traversal(root)
@@ -82,9 +84,11 @@ def main():
     postorder_traversal(root)
     print('\n')
 
+    # remove some nodes
     delete(root, 100)
     delete(root, 150)
 
+    # show new order
     inorder_traversal(root)
     print('\n')
 
